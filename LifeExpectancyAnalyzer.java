@@ -1,0 +1,95 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * Demonstrates reading data from a CSV file using Scanner
+ * Creates an ArrayList of Country objects
+ * Week 4: ArrayList + Scanner + File I/O
+ */
+public class LifeExpectancyAnalyzer {
+    private ArrayList<Country> countries;
+
+    /**
+     * Constructor initializes an empty ArrayList
+     */
+    public LifeExpectancyAnalyzer() {
+        countries = new ArrayList<Country>();
+    }
+
+    /**
+     * Reads country data from a CSV file and populates the ArrayList
+     * CSV format: country,region,population,income_group,life_expectancy_2010,life_expectancy_2015,life_expectancy_2020
+     * 
+     * @param filename path to the CSV file
+     * @throws IOFoundException if the file is not found
+     */
+    public void readFromFile(String filename) throws IOException {
+
+    }
+
+    /**
+     * Display all countries in the list
+     */
+    public void displayAllCountries() {
+  
+    }
+
+    /**
+     * Display countries from a specific region
+     * @param region the region to filter by
+     */
+    public void displayByRegion(String region) {
+ 
+    }
+
+    /**
+     * Find the country with the highest life expectancy in 2020
+     * @return the Country with the highest life expectancy, or null if list is empty
+     */
+    public Country findHighestLifeExpectancy() {
+       
+    }
+
+    /**
+     * Find the country with the lowest life expectancy in 2020
+     * @return the Country with the lowest life expectancy, or null if list is empty
+     */
+    public Country findLowestLifeExpectancy() {
+
+    }
+
+    /**
+     * Calculate the average life expectancy across all countries
+     * @return average life expectancy in 2020, or 0 if list is empty
+     */
+    public double calculateAverageLifeExpectancy() {
+        
+    }
+
+    /**
+     * Count how many countries are in a specific income group
+     * @param incomeGroup the income group to count
+     * @return number of countries in that income group
+     */
+    public int countByIncomeGroup(String incomeGroup) {
+        
+    }
+
+    /**
+     * Find the country with the most improvement in life expectancy (2010 to 2020)
+     * @return the Country with the largest improvement, or null if list is empty
+     */
+    public Country findMostImprovement() {
+        
+    }
+
+    /**
+     * Display summary statistics
+     */
+    public void displayStatistics() {
+        
+    }
+
+}

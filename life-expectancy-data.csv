@@ -1,0 +1,36 @@
+country,region,population,income_group,life_expectancy_2010,life_expectancy_2015,life_expectancy_2020
+Afghanistan,Asia,29825,low,59.2,60.5,62.1
+Albania,Europe,3087,upper-middle,76.4,77.8,78.3
+Algeria,Africa,36373,upper-middle,71.6,73.2,74.3
+Argentina,South America,40412,high,75.5,76.0,76.5
+Australia,Oceania,22342,high,81.8,82.1,82.4
+Austria,Europe,8361,high,79.9,80.8,81.5
+Bangladesh,Asia,148665,lower-middle,66.5,68.2,69.7
+Belgium,Europe,10754,high,79.5,80.4,81.2
+Brazil,South America,195312,upper-middle,71.9,73.4,74.9
+Canada,North America,33890,high,80.7,81.3,81.9
+China,Asia,1360780,upper-middle,73.5,74.4,75.2
+Colombia,South America,46927,upper-middle,71.9,73.2,74.1
+Denmark,Europe,5529,high,78.7,79.3,80.1
+Egypt,Africa,82057,lower-middle,69.6,70.8,71.9
+France,Europe,64360,high,81.0,81.8,82.4
+Germany,Europe,80767,high,80.3,80.7,81.3
+Ghana,Africa,23382,lower-middle,63.1,64.8,66.2
+India,Asia,1210193,lower-middle,62.7,65.2,67.1
+Indonesia,Asia,237641,lower-middle,68.9,70.2,71.5
+Italy,Europe,60626,high,81.4,82.3,82.8
+Japan,Asia,127515,high,82.6,83.7,84.5
+Kenya,Africa,40047,lower-middle,59.7,61.5,63.8
+Mexico,North America,122332,upper-middle,74.0,74.8,75.1
+Nigeria,Africa,173615,lower-middle,51.6,53.2,54.7
+Pakistan,Asia,176745,lower-middle,64.1,65.7,66.4
+Peru,South America,29077,upper-middle,71.0,72.5,73.9
+Poland,Europe,38063,high,75.9,77.0,77.9
+Russia,Europe,142960,upper-middle,68.8,71.2,71.4
+South Africa,Africa,50460,upper-middle,56.4,58.6,60.9
+Spain,Europe,46075,high,81.3,82.3,83.0
+Thailand,Asia,67011,upper-middle,71.8,73.0,73.9
+Turkey,Europe,72750,upper-middle,73.2,74.9,76.2
+United Kingdom,Europe,63282,high,79.8,80.5,81.3
+United States,North America,309975,high,78.2,78.8,78.9
+Vietnam,Asia,85789,lower-middle,71.3,72.8,73.6
