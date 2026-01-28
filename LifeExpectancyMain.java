@@ -14,7 +14,7 @@ public class LifeExpectancyMain {
 
             // Display various analyses
             //analyzer.displayAllCountries();
-            analyzer.displayByRegion("Asia");
+            //analyzer.displayByRegion("Asia");
             analyzer.displayStatistics();
 
         } catch (IOException e) {

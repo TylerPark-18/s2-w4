@@ -104,7 +104,7 @@ public class LifeExpectancyAnalyzer {
         for(Country s : countries){
             i = i+ s.getLifeExpectancy2020();
         }
-        return i;
+        return i/countries.size();
     }
 
     /**
@@ -113,6 +113,9 @@ public class LifeExpectancyAnalyzer {
      * @return number of countries in that income group
      */
     public int countByIncomeGroup(String incomeGroup) {
+        if(countries.size()==0){
+            return 0;
+        }
         int i = 0;
         for(Country s: countries){
             if(s.getIncomeGroup().equals(incomeGroup)){
@@ -127,6 +130,9 @@ public class LifeExpectancyAnalyzer {
      * @return the Country with the largest improvement, or null if list is empty
      */
     public Country findMostImprovement() {
+        if(countries.size()==0){
+            return null;
+        }
         Country i = countries.get(0);
         for(Country s: countries){
             if(s.getChange2010To2020()> i.getChange2010To2020())
@@ -139,9 +145,14 @@ public class LifeExpectancyAnalyzer {
      * Display summary statistics
      */
     public void displayStatistics() {
-        for(Country s: countries){
-            System.out.println(s.getName() + ", " + s.getRegion() + ", " + s.getPopulation() + ", " + s.getIncomeGroup() + ",  " + s.getLifeExpectancy2010() + ", " + s.getLifeExpectancy2015() + ", " + s.getLifeExpectancy2020());
-        }
+            System.out.println("Most improvement: " + findMostImprovement());
+            System.out.println("Count by Income Group in Oceania: " + countByIncomeGroup("Oceania"));
+            System.out.println("Average Life Expectancy: " + Math.round(calculateAverageLifeExpectancy()));
+            System.out.println("Lowest life expectancy: " + findLowestLifeExpectancy());
+            System.out.println("Highest life expectancy: " + findHighestLifeExpectancy());
+
+            //System.out.println(s.getName() + ", " + s.getRegion() + ", " + s.getPopulation() + ", " + s.getIncomeGroup() + ",  " + s.getLifeExpectancy2010() + ", " + s.getLifeExpectancy2015() + ", " + s.getLifeExpectancy2020());
+        
     }
 
 }
