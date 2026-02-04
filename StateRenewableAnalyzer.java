@@ -1,8 +1,7 @@
-import java.util.ArrayList;
-import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Analyzer for U.S. state renewable electricity data using ArrayList + Scanner + File I/O.
@@ -168,5 +167,15 @@ public class StateRenewableAnalyzer {
      */
     public int getTotalStates() {
         return states.size();
+    }
+
+    public static void main(String[] args) {
+        StateRenewableAnalyzer s = new StateRenewableAnalyzer();
+        try {
+            s.readFromFile("renewable-energy-data.csv");
+        } catch (Exception e) {
+        }
+        
+
     }
 }
