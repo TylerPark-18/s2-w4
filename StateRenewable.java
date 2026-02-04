@@ -59,7 +59,8 @@ public class StateRenewable {
      * @return estimated fossil generation
      */
     public double getFossilGenTWh() {
-        
+                return this.getTotalGenTWh() - this.getRenewableGenTWh();
+
     }
 
     /**
@@ -68,7 +69,10 @@ public class StateRenewable {
      * @return true if percentRenewable >= threshold
      */
     public boolean isAboveRenewableThreshold(double threshold) {
-        
+        if(this.getPercentRenewable()>= threshold){
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -76,6 +80,6 @@ public class StateRenewable {
      * Format: Name - XX.X% renewable (YY.Y TWh of ZZ.Z TWh)
      */
     public String toString() {
-        
+        return this.getName() + " - " + this.getPercentRenewable() + "% renewable (" +this.getRenewableGenTWh() + " of " + this.getTotalGenTWh() + ")";
     }
 }
