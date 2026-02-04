@@ -114,7 +114,7 @@ public class StateRenewableAnalyzer {
      * @return average percent, or 0 if list is empty
      */
     public double calculateAveragePercentRenewable() {
-                if(states.size()!=0){
+        if(states.size()!=0){
             double totalPercentRenewable = 0;
         for(StateRenewable c: states){
             totalPercentRenewable += c.getPercentRenewable();
